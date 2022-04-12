@@ -1,14 +1,11 @@
 const {statement} = require("./statement");
-module.exports = {
-    chapter1: function () {
-        testStatement();
-    }
-}
 
 function testStatement() {
     let statementResult = statement(testData().invoices, testData().plays);
     test(statementResult);
 }
+
+testStatement();
 
 function testData(){
     let data = {};
