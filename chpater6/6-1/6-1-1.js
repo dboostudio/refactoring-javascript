@@ -1,11 +1,3 @@
-function printOwing() {
-    printBanner();
-    let outstanding = calculateOutstanding();
-
-    console.log(`고객명 : ${invoice.customer}`);
-    console.log(`채무액 : ${outstanding}`);
-}
-
 // printDetails(outstanding) 추출하기
 
 /*
@@ -23,3 +15,11 @@ function printOwing() {
  * 6. 테스트
  * 7. 다른 코드에 추출한 함수와 중복되는 곳이 있는지 확인하고 있다면 추출한 함수를 호출할지 검토
  */
+
+function printOwing(invoice) {
+    printBanner();
+    let outstanding = calculateOutstanding();
+
+    console.log(`고객명 : ${invoice.customer}`);
+    console.log(`채무액 : ${outstanding}`);
+}
