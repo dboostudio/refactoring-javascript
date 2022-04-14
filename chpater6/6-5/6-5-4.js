@@ -10,8 +10,11 @@ addReservation()을 호출시, 예약정보를 일반큐/우선순위큐 에 넣
 2. 새 함수에 원하는 매개변수 추가
 3. 기존 함수 인라인 후 새 함수 호출하도록 변경
 4. 새함수의 이름을 기존 함수로 변경
++. 호출문 변경하기 전에 Assertion을 추가하여 새로 추가한 매개변수를 실제로 사용하는지 체크
 */
 
+
+const assert = require("assert");
 
 class Book{
     constructor() {
@@ -22,7 +25,7 @@ class Book{
         return this._reservation;
     }
 
-    addReservation(customer){
+    addReservation(customer, isPriority){
         this._reservation.push(customer);
     }
 }
@@ -39,9 +42,7 @@ function test(){
     book.addReservation("대환");
     book.addReservation("민재");
 
-    let assertEqualResult = JSON.stringify(book.reservation) === JSON.stringify(customerList);
-    if(!assertEqualResult) console.error("테스트 실패!");
-    else console.log("테스트 패스");
+    assert.deepEqual(book.reservation, customerList);
 
 }
 

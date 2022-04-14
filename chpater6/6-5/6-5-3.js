@@ -6,8 +6,9 @@
 3. 예전 함수를 인라인
 4. 호출부분에 새 함수를 호출하도록 변경
 5. 변경시마다 테스트
-
 */
+
+const assert = require("assert");
 
 function circum(radius){ return 2 * Math.PI * radius}
 
@@ -19,11 +20,7 @@ function exampleA(){
 
 function test(){
     let radius = 3;
-    let assertEqualResult = exampleA(radius) == 2*Math.PI * radius? true : false;
-    if(!assertEqualResult)
-        console.error("테스트 실패!");
-    else
-        console.log("테스트 패스");
+    assert.equal(exampleA(radius), 2*Math.PI * radius);
 }
 
 test();
