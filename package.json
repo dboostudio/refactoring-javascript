@@ -1,7 +1,7 @@
 {
   "name": "refactoring-study",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./test/test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "mocha": "^9.2.2"
+    "express": "^4.17.3"
   },
   "repository": {
     "type": "git",
@@ -20,5 +19,8 @@
     "url": "https://github.com/dboostudio/refactoring-javascript/issues"
   },
   "homepage": "https://github.com/dboostudio/refactoring-javascript#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  }
 }
