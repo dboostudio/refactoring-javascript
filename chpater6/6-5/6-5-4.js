@@ -13,7 +13,6 @@ addReservation()을 호출시, 예약정보를 일반큐/우선순위큐 에 넣
 +. 호출문 변경하기 전에 Assertion을 추가하여 새로 추가한 매개변수를 실제로 사용하는지 체크
 */
 
-
 const assert = require("assert");
 
 class Book{
