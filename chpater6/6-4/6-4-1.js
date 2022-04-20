@@ -12,6 +12,11 @@
 6. 변수 선언문과 대입문을 지운다.
 7. 테스트한다.
 
+Intellj 에서 인라인하기
+ * Intellij 에서 제공하는 Inline을 활용한다.
+ * Mac : ⌥ + ⌘ + v
+ * Window : Ctrl + Alt + v
+
 */
 function example1(){
     let basePrice = anOrder.basePrice;
