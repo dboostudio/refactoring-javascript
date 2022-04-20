@@ -9,6 +9,12 @@
 3. 각 호출문을 함수 본문으로 교체한다.
 4. 하나씩 교체할때마다 테스트한다.
 5. 함수정의를 삭제한다.
+
+
+Intellj 에서 인라인하기
+ * Intellij 에서 제공하는 Inline을 활용한다.
+ * Mac : ⌥ + ⌘ + N
+ * Window : Ctrl + Alt + N
 * */
 
 function getRating(driver){
