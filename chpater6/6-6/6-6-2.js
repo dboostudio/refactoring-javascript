@@ -22,6 +22,7 @@ defaultOwner = {firstName: "레베카", lastName: "파슨스"};
 
 function test(){
     assert.equals(spaceship.owner, {firstName: "마틴", lastName: "파울러"});
+    assert.equals(defaultOwner, {firstName: "레베카", lastName: "파슨스"});
 }
 
 test();
